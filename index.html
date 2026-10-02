@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jazmine Gonzalez | Personal Profile</title>
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=style" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        rutgers: '#CC0033',
+                        linkedin: '#0A66C2',
+                        linkedinHover: '#004182',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between items-center p-4 sm:p-6 md:p-8">
+
+    <main class="w-full max-w-xl my-auto">
+        <!-- Main Profile Card -->
+        <div class="bg-white rounded-2xl shadow-xl shadow-slate-200/60 border border-slate-100 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-slate-200/80">
+            
+            <!-- Decorative Accent Header -->
+            <div class="h-3 bg-gradient-to-r from-rutgers via-red-500 to-amber-500"></div>
+
+            <div class="p-6 sm:p-10">
+                <!-- Avatar Placeholder with Initials -->
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-tr from-rutgers to-red-600 text-white flex items-center justify-center font-bold text-xl sm:text-2xl shadow-md shadow-red-200 ring-4 ring-slate-50">
+                        JG
+                    </div>
+                    <div>
+                        <span class="inline-block px-3 py-1 bg-red-50 text-rutgers text-xs font-semibold rounded-full mb-1 tracking-wide uppercase">
+                            Rutgers University
+                        </span>
+                        <h2 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">Jazmine Gonzalez</h2>
+                    </div>
+                </div>
+
+                <!-- Greeting Title -->
+                <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4 tracking-tight flex items-center gap-2">
+                    Hi, I'm Jazmine! <span class="animate-bounce inline-block">👋</span>
+                </h1>
+
+                <!-- Bio Paragraph -->
+                <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-8">
+                    I'm a <strong class="font-semibold text-slate-800">Finance student</strong> at Rutgers studying <span class="text-slate-800 font-medium">Global Business</span> and <span class="text-slate-800 font-medium">Economics</span>, using my experience in high-energy hospitality and customer support roles to build strong problem-solving and financial analysis skills.
+                </p>
+
+                <!-- Action Button -->
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href="https://www.linkedin.com/in/jazmine-gonzalez-b4395a3a7" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="flex-1 inline-flex items-center justify-center gap-2 bg-linkedin hover:bg-linkedinHover text-white font-semibold py-3.5 px-6 rounded-xl transition-all duration-200 transform hover:-translate-y-0.5 shadow-lg shadow-blue-500/20 active:translate-y-0">
+                        <i class="fa-brands fa-linkedin text-xl"></i>
+                        <span>Connect on LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card Footer Badges -->
+            <div class="bg-slate-50 border-t border-slate-100 px-6 sm:px-10 py-4 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500 font-medium">
+                <span class="flex items-center gap-1.5">
+                    <i class="fa-solid fa-graduation-cap text-rutgers"></i>
+                    Finance & Global Business
+                </span>
+                <span class="flex items-center gap-1.5">
+                    <i class="fa-solid fa-chart-line text-emerald-600"></i>
+                    Financial Analysis
+                </span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Page Footer -->
+    <footer class="text-center text-xs text-slate-400 py-4">
+        © <span id="year"></span> Jazmine Gonzalez. All rights reserved.
+    </footer>
+
+    <script>
+        // Set dynamic current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
