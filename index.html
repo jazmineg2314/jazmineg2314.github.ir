@@ -14,7 +14,7 @@
     <!-- Google Font: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=style" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <script>
         tailwind.config = {
@@ -35,7 +35,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between items-center p-4 sm:p-6 md:p-8">
 
-    <main class="w-full max-w-xl my-auto">
+    <main class="w-full max-w-xl my-auto py-6">
         <!-- Main Profile Card -->
         <div class="bg-white rounded-2xl shadow-xl shadow-slate-200/60 border border-slate-100 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-slate-200/80">
             
@@ -62,12 +62,12 @@
                 </h1>
 
                 <!-- Bio Paragraph -->
-                <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-8">
+                <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-6">
                     I'm a <strong class="font-semibold text-slate-800">Finance student</strong> at Rutgers studying <span class="text-slate-800 font-medium">Global Business</span> and <span class="text-slate-800 font-medium">Economics</span>, using my experience in high-energy hospitality and customer support roles to build strong problem-solving and financial analysis skills.
                 </p>
 
                 <!-- Action Button -->
-                <div class="flex flex-col sm:flex-row gap-3">
+                <div class="flex flex-col sm:flex-row gap-3 mb-10">
                     <a href="https://www.linkedin.com/in/jazmine-gonzalez-b4395a3a7" 
                        target="_blank" 
                        rel="noopener noreferrer" 
@@ -76,7 +76,62 @@
                         <span>Connect on LinkedIn</span>
                     </a>
                 </div>
-            </div>
+
+                <!-- SKILLS SHOWCASE -->
+                <section class="border-t border-slate-100 pt-8 mb-8">
+                    <h2 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-layer-group text-rutgers"></i> Skills Showcase
+                    </h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-slate-100 text-slate-700 text-xs font-medium rounded-lg border border-slate-200">
+                            📊 Data Analysis (Excel/Spreadsheets)
+                        </span>
+                        <span class="px-3 py-1.5 bg-slate-100 text-slate-700 text-xs font-medium rounded-lg border border-slate-200">
+                            🤝 Team Collaboration
+                        </span>
+                        <span class="px-3 py-1.5 bg-slate-100 text-slate-700 text-xs font-medium rounded-lg border border-slate-200">
+                            💡 Problem Solving
+                        </span>
+                        <span class="px-3 py-1.5 bg-slate-100 text-slate-700 text-xs font-medium rounded-lg border border-slate-200">
+                            ⏱️ Time Management
+                        </span>
+                        <span class="px-3 py-1.5 bg-slate-100 text-slate-700 text-xs font-medium rounded-lg border border-slate-200">
+                            📈 Financial Modeling
+                        </span>
+                    </div>
+                </section>
+
+                <!-- PROJECTS SECTION -->
+                <section class="border-t border-slate-100 pt-8">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                            <i class="fa-solid fa-folder-open text-rutgers"></i> Featured Projects
+                        </h2>
+                        <a href="./PROJECTS.md" target="_blank" class="text-xs font-semibold text-rutgers hover:underline">
+                            View Markdown →
+                        </a>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Project 1 -->
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-slate-300 transition-colors">
+                            <h3 class="font-semibold text-slate-900 text-sm mb-1">
+                                1. PNC Forage Wealth Management Job Simulation
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed mb-2">
+                                Completed a practical job simulation focusing on wealth management strategies, portfolio evaluation, and client advisory scenarios.
+                            </p>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-slate-300 transition-colors">
+                            <h3 class="font-semibold text-slate-900 text-sm mb-1">
+                                2. Business Website & Branding Launch (AG Construction & Pavers)
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed mb-2">
+                                Coordinated with external branding services to design, build, and deploy an operational business website for local contracting services.
+                            </p>
+                        </div>
 
             <!-- Card Footer Badges -->
             <div class="bg-slate-50 border-t border-slate-100 px-6 sm:px-10 py-4 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500 font-medium">
@@ -102,3 +157,4 @@
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
+</html>
